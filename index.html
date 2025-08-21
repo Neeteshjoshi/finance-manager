@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager</title>
+    <link href="https://fonts.cdnfonts.com/css/sora" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Finance Manager</h1>
+        <button type="button" id="add-button" class="btn">Add</button>
+    </div>
+    <div class="search" id="search-wrapper">
+        <label for="search-input">Search Category</label>
+        <input type="text" name="search-input" id="search-input">
+    </div>
+    <div id="saved-data">
+        <table id="data-table" border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Amount (Rs.)</th>
+                </tr>
+            </thead>
+            <tbody id="data-list">
+                <!-- JS will insert rows here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-container">
+        <div class="form-wrapper" id="add-form-wrapper">
+            <div class="form-header">
+                <p>Add</p>
+            </div>
+            <form id="add-form">
+                <label for="type-select">Select Type</label>
+                <select name="type-select" id="type-select">
+                    <option value="expense">Expense</option>
+                    <option value="income">Income</option>
+                </select>
+                <label for="category-input">Category</label>
+                <input type="text" name="category-input" id="category-input">
+                <label for="amount-input">Amount</label>
+                <input type="text" name="amount-input" id="amount-input">
+                <div class="form-button-wrapper">
+                    <button id="cancel-button" class="btn" type="button">Cancel</button>
+                    <button class="btn" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
