@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updatePagination(filteredEntries.length, page);
-        updateTotals();
     }
 
     // Pagination buttons
@@ -172,5 +171,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial load
     displaySavedEntries(currentPage);
-    updateTotals()
 });
